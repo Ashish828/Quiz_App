@@ -1,6 +1,8 @@
 import React, { useContext, useState } from "react";
-import { Text, View, StatusBar, StyleSheet, Animated } from "react-native";
+import { View, StatusBar, StyleSheet, Animated } from "react-native";
+// data from context
 import { QuizContext } from "../context/QuizContext";
+// fonts
 import {
   useFonts,
   Ubuntu_500Medium,
@@ -13,6 +15,7 @@ import ModalComp from "../components/ModalComp";
 import Questions from "../components/Questions";
 import Options from "../components/Options";
 import Button from "../components/Button";
+import Loading from "../components/Loading";
 
 const QuizScreen = ({ navigation }) => {
   const [questions, setQuestions] = useContext(QuizContext);
@@ -34,7 +37,7 @@ const QuizScreen = ({ navigation }) => {
   });
 
   if (!fontsLoaded) {
-    return <Text>Loading...</Text>;
+    return <Loading />;
   }
 
   // function to validate options
@@ -113,8 +116,6 @@ const QuizScreen = ({ navigation }) => {
     );
   };
 
-  // do not forget to add background image -- trees
-
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor={"#4FACF7"} />
@@ -151,10 +152,9 @@ const QuizScreen = ({ navigation }) => {
             totalQues={questions.length}
             navigation={navigation}
           />
-          {/* background Image */}
         </View>
       ) : (
-        <Text>Loading...</Text>
+        <Loading />
       )}
     </>
   );

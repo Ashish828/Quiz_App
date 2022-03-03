@@ -16,7 +16,7 @@ export const callAPI = async (
     setQuestions([]);
     navigation.navigate("QUIZ");
     const response = await axios.get(
-      `https://opentdb.com/api.php?amount=3&category=${id}&difficulty=${difficulty}&type=multiple`
+      `https://opentdb.com/api.php?amount=10&category=${id}&difficulty=${difficulty}&type=multiple`
     );
 
     const res = response.data.results.map((d) => ({
