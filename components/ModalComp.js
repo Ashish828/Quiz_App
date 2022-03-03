@@ -21,7 +21,7 @@ const ModalComp = ({
             fontSize: 90,
           }}
         >
-          {score >= totalQues / 2 ? "Congrats!" : "opps!Next Time"}
+          {score >= totalQues / 2 ? "Congrats!" : "Oops!Next Time"}
         </Text>
         <View>
           <Text

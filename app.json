@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "QUIZ-APP",
+    "name": "QUIZ APP",
     "slug": "QUIZ-APP",
+    "privacy": "public",
+    "description": "A quiz app to practice your knowledge on different categories",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,7 +24,8 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png"
-      }
+      },
+      "package": "com.ashish828.QUIZAPP"
     },
     "web": {
       "favicon": "./assets/icon.png"
