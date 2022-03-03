@@ -8,8 +8,14 @@ But there are few Which provide better understanding between users and the appli
 To develop a user friendly quiz application which will contain : Numbers of quiz , Answers to every question, and to improve the knowledge level of users. 
 By this application the user will come to know about his/her level and can learn additional knowledge. Also by this application a user can expand his/her knowledge among the world.
 
+https://user-images.githubusercontent.com/63797339/156566503-2c3aa093-aed9-4e32-964f-655513644d46.mp4
+
+
+
 * **Programming Language:** javaScript
 * **Framework:** React Native
 * **API:** https://opentdb.com/
+
+
 
 *Design Inspiration: https://dribbble.com/shots/15846004-TravelTrivia-Quiz-Game-App*
